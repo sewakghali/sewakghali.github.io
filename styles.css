@@ -1,0 +1,339 @@
+.main{
+  margin-top: 30px;
+}
+
+body {
+  background-color: rgb(102, 170, 241);
+}
+
+nav {
+  background-color: rgb(39, 39, 39);
+  padding: 10px;
+  /* display: block; */
+  border-radius: 0 0 10px 10px;
+  position: fixed;
+  /* width: 100%; */
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 1;
+  border: solid;
+  border-color: red;
+}
+nav ul {
+  color: white;
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  transform: translate(-5%, 0);
+  text-align: center;
+}
+
+nav li:hover {
+  cursor: pointer;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+#intro h1 {
+  font-size: 2.5em;
+}
+
+#intro h4{
+  font-size: 1em;
+  text-align: center;
+}
+
+#intro #myImg {
+  /* filter: grayscale(100%); */
+  max-width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 460px;
+  height: 460px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#options {
+  display: grid;
+  grid-template-columns: 33% 7% 10% 10% 10% 30%;
+}
+
+#options img {
+  filter: grayscale(100%);
+  grid-column-start: 2;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  transform: translate(0, 15px);
+}
+
+#resume p {
+  font-size: 1.25em;
+  grid-column-start: 3;
+}
+
+#options img,
+#resume p,
+#contactOption p {
+  cursor: pointer;
+}
+
+#contactOption {
+  font-size: 1.25em;
+  grid-column-start: 5;
+}
+
+#intro h1 {
+  text-align: center;
+}
+
+/* #focushr{
+  scroll-margin-top: 0;
+} */
+
+#about {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 10px;
+  opacity: 100%;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(39, 39, 39);
+}
+
+#aboutcard {
+  color: white;
+  background-color: rgb(39, 39, 39);
+  padding: 10px;
+  border-radius: 10px;
+  border: solid;
+  border-color: rgb(2, 227, 2);
+}
+
+#aboutcard h3 {
+  display: block;
+  padding: 0px;
+  text-align: center;
+}
+
+#infoCard {
+  color: white;
+  padding: 10px;
+  background-color: rgb(39, 39, 39);
+  grid-column-start: 2;
+  grid-row-start: 2;
+  /* grid-row-end: 5; */
+  border-radius: 10px;
+  border: solid;
+  border-color: rgb(2, 227, 2);
+}
+
+#infoCard h3 {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+#infoCard ul {
+  list-style: none;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 33% 67%;
+}
+
+#education {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 100%;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(39, 39, 39);
+}
+
+#highSchool {
+  background-color: rgb(39, 39, 39);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid;
+  border-color: yellow;
+}
+
+#diploma {
+  background-color: rgb(39, 39, 39);
+  color: white;
+  padding: 10px;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  border-radius: 10px;
+  border: solid;
+  border-color: yellow;
+}
+
+#education h2,
+#work h2 {
+  background-color: rgb(39, 39, 39);
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#work {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  grid-gap: 10px;
+  border-radius: 10px;
+  opacity: 100%;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(39, 39, 39);
+}
+
+#gameDev {
+  background-color: rgb(39, 39, 39);
+  color: white;
+  padding: 10px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  /* grid-row-start: ; */
+  border-radius: 10px;
+  border: solid;
+  border-color: rgb(0, 21, 255);
+
+}
+#Cdev {
+  background-color: rgb(39, 39, 39);
+  color: white;
+  padding: 10px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  /* grid-row-start: ; */
+  border-radius: 10px;
+  border: solid;
+  border-color: rgb(0, 21, 255);
+}
+#webDev {
+  background-color: rgb(39, 39, 39);
+  color: white;
+  padding: 10px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  /* grid-row-start: ; */
+  border-radius: 10px;
+  border: solid;
+  border-color: rgb(0, 21, 255);
+}
+
+#contactForm {
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 100%;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(39, 39, 39);
+}
+
+#contactForm h3{
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+#form{
+  position: relative;
+  margin: 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+  display: grid;
+  /* grid-gap: 20px; */
+  grid-template-columns: repeat(12, auto);
+  grid-template-rows: repeat(15,auto);
+}
+
+label {
+  grid-column-start: 1;
+}
+
+input{
+  border-radius: 4px;
+  grid-column-start: 2;
+  grid-column-end: 13;
+}
+
+label[for="ques"]{
+    grid-column-start: 3;
+    grid-row-start: 8;
+}
+label[for="comment"]{
+    grid-column-start: 6;
+    grid-row-start: 8;
+}
+label[for="hiring"] {
+    grid-column-start: 9;
+    grid-row-start: 8;
+}
+
+input[id="ques"] {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 9;
+    
+}
+input[id="comment"] {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 9;
+    
+}
+input[id="hiring"] {
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 9;
+}
+
+label[for="desc"] {
+    grid-row-start: 12;
+}
+form textarea{
+  border-radius: 5px;
+    grid-column-start: 2;
+    grid-column-end: 13;
+    grid-row-start: 12;
+    resize: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+input[type=submit]{
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row: 13;
+  text-align: center;
+}
+
+input[type=submit]:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width:600px){
+  #about, #work, #education{
+    display: block;
+    left:0;
+    right:0;
+  }
+}

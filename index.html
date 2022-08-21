@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navigation">
+        <ul>
+          <li>This is...</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="intro">
+      <br /><br /><br /><br /><br />
+      <img id="myImg" src="./20220819_001637.jpg" alt="" />
+      <h1>Sewak Singh Gill</h1>
+      <h4>Web Dev, C/C++ Dev, Game Dev, Forever Learner</h4>
+
+      <section id="options">
+        <img src="./45162.png" alt="" />
+        <div id="resume">
+          <p>Resume</p>
+        </div>
+        <div id="contactOption">
+          <p>Contact</p>
+        </div>
+      </section>
+    </section>
+
+    <div id="focushr">
+      <hr />
+    </div>
+    <br />
+
+    <section id="about">
+      <div id="aboutcard">
+        <h3>About</h3>
+        <p>
+          My name is Sewak Singh Gill. I am currently a Computer Science student
+          at Seneca College. I am very good at programming in C/C++ and
+          JavaScript and begining to get better at python as well. My fields of
+          interests other than computers are Physics, Mathematics, Robotics,
+          Mechanics and Electronics. I aspire to combine all of these into
+          building a robot of my own one day. But for now, I will stick to game
+          development and web development.
+        </p>
+      </div>
+
+      <div id="infoCard">
+        <h3>Basic Information</h3>
+        <ul>
+          <li>Name:</li>
+          <li>Sewak Singh Gill</li>
+          <li>Age:</li>
+          <li>18</li>
+          <li>Languages:</li>
+          <li>Punjabi, English, Hindi</li>
+          <li>Email:</li>
+          <li>sgill116@myseneca.ca</li>
+          <li>Student Id:</li>
+          <li>159282219</li>
+          <li>Hobbies:</li>
+          <li>Playing soccer, Game Development, Web Development</li>
+        </ul>
+      </div>
+    </section>
+
+    <br />
+    <hr />
+    <br />
+
+    <section id="education">
+      <h2>Education</h2>
+      <div id="highSchool">
+        <h4>High School</h4>
+        <h4>2018-2021</h4>
+        <p>
+          My high school records are excellent. I studied at Akal Academy
+          Puranewala, Moga, a high school in India. I scored 95.6% marks in 10th
+          grade. I then opted for Non-Medical stream for the last two years'
+          study at high school and managed to score 89.2% marks overall. My
+          hobby of reading is what has made me successful at academics.
+        </p>
+      </div>
+      <div id="diploma">
+        <h4>Computer Programming And Analysis</h4>
+        <h4>2022-Present</h4>
+        <p>
+          After graduating from high school in 2021, I decided to move abroad
+          for further studies, and here I am, pursuing an advanced diploma in
+          Computer Programming and Analysis. Moving to Canada has proved to be
+          very good decision as I have now the opportunites to learn in a
+          multicultural environment, and thrive in increased exposure.
+        </p>
+      </div>
+    </section>
+
+    <br />
+    <hr />
+    <br />
+
+    <section id="work">
+      <h2>Experience</h2>
+      <div id="gameDev">
+        <h4>Game Developer</h4>
+        <p>
+          Game development is my stepping stone in the world of computers.
+          Before 2019, I had no interest in software programming or anyhting
+          related to it. But then I saw the Unreal Engine 4 demos after watching
+          its trademark from the popular battle royale game, PUBG mobile. I was
+          so impressed by the feats of UE4 that I decided to learn game
+          development. My finished projects include a 2D platformer game and a
+          3rd person offline shooter game.
+        </p>
+      </div>
+
+      <div id="Cdev">
+        <h4>C/C++ Developer</h4>
+        <p>
+          After learning the basics of UE4, I decided to learn C++, the language
+          in which UE4 is coded. As of now, I am leaning C++ in my college too
+          which is super fun. I have built numerous programs in C/C++, assigned
+          to me by the professor and I have achieved very good results.
+        </p>
+      </div>
+
+      <div id="webDev">
+        <h4>Front-End Web Developer</h4>
+        <p>
+          The front-end development is my first step in the world of
+          web-development. My profiency at this activity can be seen from this
+          website. I aspire to be a full-stack developer one day, but I still
+          need to do some work on my web-development skills.
+        </p>
+      </div>
+    </section>
+
+    <br />
+    <hr >
+    <br />
+    <br><br><br><br>
+
+    <section id="contactForm">
+      <h3>Contact Me</h3>
+
+      <!-- <div id="cform"> -->
+      <form id = "form" action="submit" method="post">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name please."
+          required
+          maxlength="80"
+        />
+        <br>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="mail"
+          placeholder="Your email please."
+          required
+          maxlength="80"
+        />
+        <br>
+        <label for="city">City</label>
+        <input
+          type="text"
+          id="city"
+          name="city"
+          placeholder="Your city name please."
+          required
+          maxlength="50"
+        />
+        <br>
+        <label for="ques">Question</label>
+        <input type="radio" id="ques" name="type" value="ques" required />
+        <label for="comment">Comment</label>
+        <input type="radio" id="comment" name="type" value="comment" required />
+        <label for="hiring">Hiring</label>
+        <input type="radio" id="hiring" name="type" value="hiring" required />
+
+        <br>
+        <label for="desc">Message</label>
+        <textarea
+          name="desc"
+          id="desc"
+          rows="15"
+          required
+          maxlength="1000"
+          placeholder="Short and Simple."
+        ></textarea>
+
+        <br>
+        <input type="submit" value="SUMBIT" />
+      </form>
+      <!-- </div> -->
+    </section>
+
+    <br />
+    <hr />
+  </body>
+  <script src="./js_index.js"></script>
+</html>
