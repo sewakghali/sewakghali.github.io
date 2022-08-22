@@ -33,7 +33,18 @@ contactOption.addEventListener("click", function clickfunction(){
 const downloadImg = document.getElementById("options").getElementsByTagName("img");
 
 downloadImg[0].addEventListener("click", function clickfunction(){
-    document.getElementById("contactForm").scrollIntoView({
-        behavior: "smooth"
-    });
-})
+    downloadUsingAnchorElement();
+});
+
+document.getElementById("resume").addEventListener("click", function clickfunction(){
+    downloadUsingAnchorElement();
+});
+
+function downloadUsingAnchorElement() {
+    const anchor = document.createElement("a");
+    anchor.href = "./Resume-Sewak_Singh_Gill.pdf";
+    anchor.target="_blank";
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+};  
